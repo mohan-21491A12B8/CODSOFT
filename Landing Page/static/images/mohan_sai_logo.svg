@@ -1,0 +1,28 @@
+ <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="418"
+    height="100"
+    viewBox="0 0 418 100"
+>
+    <!-- Background Rectangle -->
+    <rect width="100%" height="100%" fill="white" />
+    
+    <!-- Single line: Mohan Sai -->
+    <text
+        x="10"
+        y="70"
+        font-family="Arial, sans-serif"
+        font-size="60"
+        font-weight="bold"
+    >
+        <tspan fill="#4285F4">M</tspan>
+        <tspan fill="#EA4335">o</tspan>
+        <tspan fill="#FBBC05">h</tspan>
+        <tspan fill="#34A853">a</tspan>
+        <tspan fill="#4285F4">n</tspan>
+        <tspan fill="#FFFFFF" dx="0"> </tspan> <!-- No extra space -->
+        <tspan fill="#FBBC05">S</tspan>
+        <tspan fill="#34A853">a</tspan>
+        <tspan fill="#4285F4">i</tspan>
+    </text>
+</svg>
