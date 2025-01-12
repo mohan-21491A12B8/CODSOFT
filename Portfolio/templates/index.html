@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan Sai Bakkamunthala - Portfolio</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/f03928cb64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img src="../static/images/logo.png" class="logo">
+            <div class="fa-solid fa-bars" id="mobile-menu-icon"></div> <!-- Mobile menu icon -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <ul id="side-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><div class="fa-solid fa-times" id="close-menu-icon"></div></li> <!-- Close icon -->
+        </ul>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Mohan Sai Bakkamunthala</h1>
+                <p>B.Tech Final Year</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-button">View My Work</a>
+                    <a href="../static/images/Mohansai-resume.pdf" class="cta-button secondary" download>Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="../static/images/mohansai.png" alt="Mohan Sai Bakkamunthala" class="profile-img">
+                <div class="bio">
+                    <p>
+                        I am a passionate and dedicated <strong>Information Technology</strong> student currently in my final year of B.Tech at <strong>QIS College of Engineering and Technology</strong>. With a strong foundation in computer science and software engineering, I have developed expertise in various programming languages, web development, cloud technologies, and database management.
+                    </p>
+                    <p>
+                        Over the course of my academic journey, I have actively participated in <strong>research projects</strong>, <strong>coding competitions</strong>, and <strong>internships</strong>, honing my problem-solving and analytical skills. My primary interests lie in <strong>software development</strong>, <strong>cloud computing</strong>, and <strong>artificial intelligence</strong>, and I am always eager to explore new technologies.
+                    </p>
+                    <p>
+                        In addition to my technical skills, I have developed strong <strong>communication</strong> and <strong>teamwork</strong> abilities through collaborative projects and group work. I am constantly striving to grow both professionally and personally, aiming to contribute meaningfully to the tech industry.
+                    </p>
+                    <p>
+                        I am excited to transition into the professional world and look forward to applying my skills and knowledge in real-world scenarios.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Programming Languages: C, Python, Java</li>
+                        <li>Web Development: HTML5, CSS3, JavaScript</li>
+                        <li>Database Management: SQL, MongoDB</li>
+                        <li>Cloud Platforms: Google Cloud</li>
+                        <li>Version Control: Git</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Team Collaboration</li>
+                        <li>Critical Thinking</li>
+                        <li>Fast Learning</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+                <div class="interactive-skills">
+                    <div class="skill-levels"> <!-- New div for styling -->
+                        <h3>Skill Levels</h3>
+                        <p>C: <progress value="80" max="100"></progress> 80%</p>
+                        <p>Python: <progress value="85" max="100"></progress> 85%</p>
+                        <p>Java: <progress value="70" max="100"></progress> 70%</p>
+                        <p>HTML/CSS: <progress value="90" max="100"></progress> 90%</p>
+                        <p>JavaScript: <progress value="85" max="100"></progress> 85%</p>
+                        <p>Google Cloud: <progress value="75" max="100"></progress> 75%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Next Gen Diary Project Card -->
+                <div class="project-card">
+                    <img src="../static/images/image.png" alt="Next Gen Diary">
+                    <div class="project-info">
+                        <h3 onclick="toggleDescription(event)">Next Gen Diary</h3>
+                        <p class="project-description" style="display: none;">A solar-powered temperature-based automatic cooling system designed for livestock farms, targeting heat stress management in cattle. This project integrates a solar power generation system with an Arduino-based cooling mechanism, utilizing temperature-humidity sensors and a fogger/mister system to maintain optimal environmental conditions for livestock.</p>
+                        <div class="technologies">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">Solar Power</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../static/images/next-gen-diary-demo.txt" target="_blank" class="live-demo-link">Live Demo</a>
+                            <a href="https://github.com/mohansai/next-gen-diary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Pay Later Service Project Card -->
+                <div class="project-card">
+                    <img src="../static/images/Pay Later Service.jpg" alt="Pay Later Service">
+                    <div class="project-info">
+                        <h3 onclick="toggleDescription(event)">Pay Later Service</h3>
+                        <p class="project-description" style="display: none;">
+                            The Pay Later Service is designed to empower consumers by providing a flexible payment option that allows them to purchase goods immediately while deferring payment to a later date. With features like user onboarding, transaction tracking, and easy repayment options, the Pay Later Service aims to enhance the shopping experience while promoting financial flexibility.
+                        </p>
+                        <div class="technologies">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../static/images/pay-later-service.txt" target="_blank" class="live-demo-link">Live Demo</a>
+                            <a href="https://github.com/mohansai/pay-later-service" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- College Admissions Website Project Card -->
+                <div class="project-card">
+                    <img src="../static/images/College Admissions Website.png" alt="College Admissions Website">
+                    <div class="project-info">
+                        <h3 onclick="toggleDescription(event)">College Admissions Website</h3>
+                        <p class="project-description" style="display: none;">
+                            A comprehensive platform for students to navigate the college admissions process, including application tracking and resources. This site provides essential tools and information to help students successfully manage their college applications.
+                        </p>
+                        <div class="technologies">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="../static/images/college-admissions-website.txt" target="_blank" class="live-demo-link">Live Demo</a>
+                            <a href="https://github.com/mohansai/college-admissions-website" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="certifications" class="certifications">
+            <h2>Certifications</h2>
+            <div class="certificate-grid">
+                <!-- Google Cloud Generative-AI Certification -->
+                <div class="certificate-card">
+                    <img src="../static/images/GenerativeAI.png" alt="Google Cloud Certification">
+                    <h3>Google Cloud Generative AI</h3>
+                    <p>Issued by Google</p>
+                    <p>Date: Sep 2024</p>
+                    <a href="../static/images/Mohan  Sai Bakkamunthala  988634.pdf" target="_blank">Download PDF</a>
+                </div>
+        
+                <!-- Android Developer Certification -->
+                <div class="certificate-card">
+                    <img src="../static/images/google Android Developer.png" alt="Android Developer Certification">
+                    <h3>Google Android Developer</h3>
+                    <p>Issued by EduSkills</p>
+                    <p>Date: June 2024</p>
+                    <a href="../static/images/Mohan  Sai Bakkamunthala  843121.pdf" target="_blank">Download PDF</a>
+                </div>
+        
+                <!-- New Certificate: AWS Certification -->
+                <div class="certificate-card">
+                    <img src="../static/images/AWS AI-ML.png" alt="AWS Certification">
+                    <h3>AWS AI-ML</h3>
+                    <p>Issued by Amazon Web Services</p>
+                    <p>Date:July 2023</p>
+                    <a href="../static/images/Mohan  Sai 254685.pdf" target="_blank">Download PDF</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 style="text-align: center;margin-bottom: 0.3rem;">My Details:</h3>
+                    <p><strong>Name:</strong> Mohan Sai Bakkamunthala</p>
+                    <p><strong>Email:</strong> bakkamanthulamohansai@gmail.com</p>
+                    
+                    <p><strong>College:</strong> QIS College of Engineering & Technology.</p>
+                    <p><strong>Branch:</strong> Information Technology</p>
+                    <p style="color: white;"><strong>Phone:</strong> 9182054415</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/mohan-21491a12b8" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/MohanSai786" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohan-sai-bakkamunthala-8a4734285/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/mohans_786" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="contact-form">
+                    <form action="mailto:bakkamanthulamohansai@gmail.com" method="POST" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mohan Sai Bakkamunthala. All rights reserved.</p>
+    </footer>
+    <script src="../static/js/style.js"></script>
+</body>
+</html>

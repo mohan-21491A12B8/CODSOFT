@@ -1,0 +1,574 @@
+/* Base styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --white: #fff;
+    --shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header & Navigation */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.logo {
+    width: 140px;
+    height: 45px;
+}
+
+/* Side Menu Styles */
+#side-menu {
+    background: var(--text-color) ;/* Background color for the side menu */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    right: -250px; /* Start hidden off-screen */
+    width: 200px; /* Width of the side menu */
+    height: 1000vh; /* Full height */
+    padding-top: 50px; /* Padding for menu items */
+    z-index: 1000; /* Ensure it appears above other content */
+    transition: right 0.3s ease; /* Smooth transition for showing/hiding */
+}
+
+#side-menu.show {
+    right: 0; /* Show the menu when the class 'show' is added */
+}
+
+#side-menu li {
+    list-style: none; /* Remove bullet points */
+    margin: 20px; /* Space between menu items */
+    padding: 5px;
+}
+
+#side-menu a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem; /* Font size for menu items */
+}
+
+/* Mobile Menu Icon */
+#mobile-menu-icon {
+    display: block; /* Show mobile menu icon */
+    cursor: pointer; /* Pointer cursor for clickable */
+}
+
+/* Close Menu Icon */
+#close-menu-icon {
+    position: absolute; /* Position for close icon */
+    top: 20px; /* Position from top */
+    left: 20px; /* Position from left */
+    font-size: 25px; /* Size of the close icon */
+    color: white; /* Color of the close icon */
+    cursor: pointer; /* Pointer cursor for clickable */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('../images/main-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--primary-color);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    border: 2px solid var(--white);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.skill-category h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+
+.interactive-skills {
+    background: var(--white);
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.skill-levels h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+
+/* Sections */
+section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+/* About Section */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 5rem 2rem;
+    background-color: var(--background-color);
+}
+
+.certifications h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.certificate-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-card img {
+    width: 100%; /* Full width of the card */
+    height: 150px; /* Fixed height */
+    object-fit: contain; /* Ensure the entire image is visible */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 1rem;
+}
+
+.certificate-card h3 {
+    font-size: 1.5rem;
+    margin-bottom:  1rem;
+}
+
+.certificate-card p {
+    margin-bottom: 0.5rem;
+}
+
+.certificate-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Projects Section */
+.projects {
+    padding: 5rem 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100% ; /* Full width of the card */
+    height: 200px; /* Fixed height */
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    margin-bottom: 1rem;
+}
+
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-tag {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 5rem 2rem;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Adjusted to give more space to the form */
+    gap: 2rem; /* Maintain gap between contact info and form */
+}
+
+.contact-info {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem; /* Add some space below the contact info */
+}
+
+.contact-info p{
+    margin-bottom: 1rex;
+}
+
+.social-icons {
+    text-align: center; /* Center the social icons */
+    margin-top: 2rem; /* Add some space above the icons */
+}
+
+.social-icons a {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+.contact-form {
+    height: 325px;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--white); /* Add border */
+    box-shadow: var(--shadow);
+    max-width: 650px; /* Increase the size of the form */
+    width: 100%; /* Ensure the form takes full width up to max-width */
+    margin: 0 auto; /* Center the form */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 26%; /* Make the button full width */
+    margin-left: 36%;
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #007bff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* ----------------- Media Query for Small Screens ----------------- */
+/* Hide the side menu icon on larger screens */
+@media only screen and (min-width: 601px) {
+    #mobile-menu-icon {
+        display: none; /* Hide the mobile menu icon on desktop */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        background-image: url(images/mobile-2.jpg); /* Change header background for mobile */
+    }
+    
+    .header-text {
+        margin-top: 100%; /* Adjust margin for header text */
+        font-size: 16px; /* Adjust font size for header text */
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem; /* Adjust hero title size */
+    }
+    
+    .nav-links {
+        display: none; /* Hide the regular nav links */
+    }
+    
+    nav .fa-solid {
+        display: block; /* Show mobile icon */
+        font-size: 25px; /* Adjust mobile icon size */
+    }
+    
+    nav ul {
+        background: var(--secondary-color); /* Background color for mobile nav */
+        position: fixed; /* Fixed position for mobile nav */
+        top: 0; /* Align to top */
+        right: -200px; /* Start hidden off-screen */
+        width: 200px; /* Width of mobile nav */
+        height: 100vh; /* Full height */
+        padding-top: 50px; /* Padding for nav items */
+        z-index: 2; /* Ensure it appears above other content */
+        transition: right 0.5s; /* Smooth transition for showing/hiding */
+    }
+    
+    nav ul.show {
+        right: 0; /* Show the nav when the class 'show' is added */
+    }
+    
+    nav ul li {
+        display: block; /* Stack nav items */
+        margin: 25px; /* Margin between nav items */
+    }
+    
+    nav ul .fa-solid {
+        position: absolute; /* Position for close icon */
+        top: 25px; /* Position from top */
+        left: 25px; /* Position from left */
+        cursor: pointer; /* Pointer cursor for clickable */
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr; /* Stack columns in about section */
+    }
+    
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Full width for about columns */
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr; /* Stack columns in contact section */
+    }
+    
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Full width for contact columns */
+    }
+    
+    .cta-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem; /* Space between buttons */
+    }
+    
+    .cta-button {
+        width: 100%; /* Full width for buttons */
+        margin: 0; /* Reset margin */
+    }
+    
+    section h2 {
+        font-size: 2rem; /* Adjust section heading size */
+    }
+    
+    .certifications h2 {
+        font-size: 2rem; /* Adjust certifications heading size */
+    }
+    
+    .projects h2 {
+        font-size: 2rem; /* Adjust projects heading size */
+    }
+    
+    .contact h2 {
+        font-size: 2rem; /* Adjust contact heading size */
+    }
+    
+    .contact-form {
+        width: 100%; /* Ensure the form takes full width */
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+    
+    button[type="submit"] {
+        width: 50%; /* Make the button full width */
+        padding: 0.5rem; /* Increase padding for better touch targets */
+        font-size: 1rem; /* Adjust font size for readability */
+        margin-left: 25%; /* Reset margin to avoid overflow */
+        border-radius: 5px; /* Ensure consistent border radius */
+    }
+    
+    footer {
+        width: 100%; /* Ensure the footer takes the full width */
+        margin-left: 0%;
+        padding: 1rem; /* Add padding for spacing */
+        background-color: var(--secondary-color); /* Use your defined secondary color */
+        color: var(--white); /* Text color */
+        text-align: center; /* Center the text */
+    }
+
+}
