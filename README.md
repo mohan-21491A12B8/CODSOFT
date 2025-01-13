@@ -38,7 +38,7 @@ This repository contains all my submissions for the **CODSOFT Web Development In
 - **Files:**  
   - `templates/index.html`: HTML structure for the portfolio.  
   - `static/css/style.css`: Styling for the portfolio.  
-  - `static/js/portfolio.js`: JavaScript for interactivity and animations.  
+  - `static/js/style.js`: JavaScript for interactivity and animations.  
   - `app.py`: Flask application to serve the portfolio.
 
 ---
@@ -55,7 +55,7 @@ This repository contains all my submissions for the **CODSOFT Web Development In
 - **Files:**  
   - `templates/index.html`: HTML structure for the calculator.  
   - `static/css/style.css`: Styling for the calculator.  
-  - `static/js/calculator.js`: JavaScript for calculator functionality.  
+  - `static/js/style.js`: JavaScript for calculator functionality.  
   - `app.py`: Flask application to serve the calculator.
 
 ---
