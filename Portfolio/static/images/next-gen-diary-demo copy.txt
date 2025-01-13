@@ -1,1 +1,0 @@
-A solar-powered temperature-based automatic cooling system designed for livestock farms, targeting heat stress management in cattle. This project integrates a solar power generation system with an Arduino-based cooling mechanism, utilizing temperature-humidity sensors and a fogger/mister system to maintain optimal environmental conditions for livestock.

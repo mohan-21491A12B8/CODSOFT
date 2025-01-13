@@ -70,47 +70,47 @@ body {
 
 /* Side Menu Styles */
 #side-menu {
-    background: var(--text-color) ;/* Background color for the side menu */
-    position: fixed; /* Fixed position */
-    top: 0; /* Align to the top */
-    right: -250px; /* Start hidden off-screen */
-    width: 200px; /* Width of the side menu */
-    height: 1000vh; /* Full height */
-    padding-top: 50px; /* Padding for menu items */
-    z-index: 1000; /* Ensure it appears above other content */
-    transition: right 0.3s ease; /* Smooth transition for showing/hiding */
+    background: var(--text-color);
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 200px;
+    height: 1000vh;
+    padding-top: 50px;
+    z-index: 1000;
+    transition: right 0.3s ease;
 }
 
 #side-menu.show {
-    right: 0; /* Show the menu when the class 'show' is added */
+    right: 0;
 }
 
 #side-menu li {
-    list-style: none; /* Remove bullet points */
-    margin: 20px; /* Space between menu items */
+    list-style: none;
+    margin: 20px;
     padding: 5px;
 }
 
 #side-menu a {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.5rem; /* Font size for menu items */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 /* Mobile Menu Icon */
 #mobile-menu-icon {
-    display: block; /* Show mobile menu icon */
-    cursor: pointer; /* Pointer cursor for clickable */
+    display: block;
+    cursor: pointer;
 }
 
 /* Close Menu Icon */
 #close-menu-icon {
-    position: absolute; /* Position for close icon */
-    top: 20px; /* Position from top */
-    left: 20px; /* Position from left */
-    font-size: 25px; /* Size of the close icon */
-    color: white; /* Color of the close icon */
-    cursor: pointer; /* Pointer cursor for clickable */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
 }
 
 /* Hero Section */
@@ -259,10 +259,10 @@ section h2 {
 }
 
 .certificate-card img {
-    width: 100%; /* Full width of the card */
-    height: 150px; /* Fixed height */
-    object-fit: contain; /* Ensure the entire image is visible */
-    border-radius: 10px; /* Rounded corners */
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
     margin-bottom: 1rem;
 }
 
@@ -304,8 +304,8 @@ section h2 {
 }
 
 .project-card img {
-    width: 100% ; /* Full width of the card */
-    height: 200px; /* Fixed height */
+    width: 100%;
+    height: 200px;
 }
 
 .project-info {
@@ -362,8 +362,8 @@ section h2 {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1.5fr; /* Adjusted to give more space to the form */
-    gap: 2rem; /* Maintain gap between contact info and form */
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
 }
 
 .contact-info {
@@ -371,7 +371,7 @@ section h2 {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
-    margin-bottom: 2rem; /* Add some space below the contact info */
+    margin-bottom: 2rem; 
 }
 
 .contact-info p{
@@ -379,8 +379,8 @@ section h2 {
 }
 
 .social-icons {
-    text-align: center; /* Center the social icons */
-    margin-top: 2rem; /* Add some space above the icons */
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .social-icons a {
@@ -391,18 +391,19 @@ section h2 {
 }
 
 .social-icons a:hover {
-    color: var(--primary-color); /* Change color on hover */
+    color: var(--primary-color);
 }
+
 .contact-form {
     height: 325px;
     background: var(--white);
     padding: 1.5rem;
     border-radius: 10px;
-    border: 1px solid var(--white); /* Add border */
+    border: 1px solid var(--white);
     box-shadow: var(--shadow);
-    max-width: 650px; /* Increase the size of the form */
-    width: 100%; /* Ensure the form takes full width up to max-width */
-    margin: 0 auto; /* Center the form */
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 form {
@@ -424,7 +425,7 @@ textarea {
 }
 
 button[type="submit"] {
-    width: 26%; /* Make the button full width */
+    width: 26%;
     margin-left: 36%;
     background: var(--secondary-color);
     color: var(--white);
@@ -452,123 +453,129 @@ footer {
 /* Hide the side menu icon on larger screens */
 @media only screen and (min-width: 601px) {
     #mobile-menu-icon {
-        display: none; /* Hide the mobile menu icon on desktop */
+        display: none; 
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .header {
-        background-image: url(images/mobile-2.jpg); /* Change header background for mobile */
-    }
-    
+    .hero {
+        /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url('../images/mohansai.png');
+        background: url(../images/mobile-background.png); */
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        width: 100%; 
+        height: 100vh; 
+    } 
+        
     .header-text {
-        margin-top: 100%; /* Adjust margin for header text */
-        font-size: 16px; /* Adjust font size for header text */
+        margin-top: 100%; 
+        font-size: 16px; 
     }
     
     .hero-content h1 {
-        font-size: 2.5rem; /* Adjust hero title size */
+        font-size: 2.5rem; 
     }
     
     .nav-links {
-        display: none; /* Hide the regular nav links */
+        display: none; 
     }
     
     nav .fa-solid {
-        display: block; /* Show mobile icon */
-        font-size: 25px; /* Adjust mobile icon size */
+        display: block; 
+        font-size: 25px; 
     }
     
     nav ul {
-        background: var(--secondary-color); /* Background color for mobile nav */
-        position: fixed; /* Fixed position for mobile nav */
-        top: 0; /* Align to top */
-        right: -200px; /* Start hidden off-screen */
-        width: 200px; /* Width of mobile nav */
-        height: 100vh; /* Full height */
-        padding-top: 50px; /* Padding for nav items */
-        z-index: 2; /* Ensure it appears above other content */
-        transition: right 0.5s; /* Smooth transition for showing/hiding */
+        background: var(--secondary-color); 
+        position: fixed; 
+        top: 0; 
+        right: -200px; 
+        width: 200px; 
+        height: 100vh; 
+        padding-top: 50px; 
+        z-index: 2; 
+        transition: right 0.5s; 
     }
     
     nav ul.show {
-        right: 0; /* Show the nav when the class 'show' is added */
+        right: 0; 
     }
     
     nav ul li {
-        display: block; /* Stack nav items */
-        margin: 25px; /* Margin between nav items */
+        display: block; 
+        margin: 25px; 
     }
     
     nav ul .fa-solid {
-        position: absolute; /* Position for close icon */
-        top: 25px; /* Position from top */
-        left: 25px; /* Position from left */
-        cursor: pointer; /* Pointer cursor for clickable */
+        position: absolute; 
+        top: 25px; 
+        left: 25px; 
+        cursor: pointer; 
     }
-    
+        
     .about-content {
-        grid-template-columns: 1fr; /* Stack columns in about section */
+        grid-template-columns: 1fr;
     }
     
     .about-col-1, .about-col-2 {
-        flex-basis: 100%; /* Full width for about columns */
+        flex-basis: 100%; 
     }
     
     .contact-content {
-        grid-template-columns: 1fr; /* Stack columns in contact section */
+        grid-template-columns: 1fr; 
     }
     
     .contact-left, .contact-right {
-        flex-basis: 100%; /* Full width for contact columns */
+        flex-basis: 100%; 
     }
     
     .cta-buttons {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 1rem; /* Space between buttons */
+        flex-direction: column; 
+        gap: 1rem; 
     }
     
     .cta-button {
-        width: 100%; /* Full width for buttons */
-        margin: 0; /* Reset margin */
+        width: 100%; 
+        margin: 0; 
     }
     
     section h2 {
-        font-size: 2rem; /* Adjust section heading size */
+        font-size: 2rem; 
     }
     
     .certifications h2 {
-        font-size: 2rem; /* Adjust certifications heading size */
+        font-size: 2rem; 
     }
     
     .projects h2 {
-        font-size: 2rem; /* Adjust projects heading size */
+        font-size: 2rem; 
     }
     
     .contact h2 {
-        font-size: 2rem; /* Adjust contact heading size */
+        font-size: 2rem; 
     }
     
     .contact-form {
-        width: 100%; /* Ensure the form takes full width */
-        box-sizing: border-box; /* Include padding and border in width */
+        width: 100%; 
+        box-sizing: border-box; 
     }
     
     button[type="submit"] {
-        width: 50%; /* Make the button full width */
-        padding: 0.5rem; /* Increase padding for better touch targets */
-        font-size: 1rem; /* Adjust font size for readability */
-        margin-left: 25%; /* Reset margin to avoid overflow */
-        border-radius: 5px; /* Ensure consistent border radius */
+        width: 50%; 
+        padding: 0.5rem; 
+        font-size: 1rem; 
+        margin-left: 25%; 
+        border-radius: 5px; 
     }
     
     footer {
-        width: 100%; /* Ensure the footer takes the full width */
+        width: 100%; 
         margin-left: 0%;
-        padding: 1rem; /* Add padding for spacing */
-        background-color: var(--secondary-color); /* Use your defined secondary color */
-        color: var(--white); /* Text color */
-        text-align: center; /* Center the text */
+        padding: 1rem; 
+        background-color: var(--secondary-color); 
+        color: var(--white); 
+        text-align: center; 
     }
-
 }
